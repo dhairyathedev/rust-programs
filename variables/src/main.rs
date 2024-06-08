@@ -39,11 +39,12 @@ fn main() {
     
     // Check safety by rust
     // It will only print if the character exists or the error will show
+    // println!("char1: {}", char1.unwrap()); this also works but not recommended
     match char1 {
         Some(c) => println!("{}", c),
         None => println!("No character at index 1000"),
     }
     // // This is invalid
-    // println!("char1: {}", char1);
+    println!("char1: {}", char1);
 
 }
