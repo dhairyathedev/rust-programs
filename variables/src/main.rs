@@ -45,6 +45,6 @@ fn main() {
         None => println!("No character at index 1000"),
     }
     // // This is invalid
-    println!("char1: {}", char1);
+    // println!("char1: {}", char1);
 
 }
