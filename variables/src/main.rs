@@ -31,8 +31,19 @@ fn main() {
 
     // Strings
 
-    let str = "Dhairya Shah";
-    let str2 = String::from("Code");
+    let str: &str = "Dhairya Shah";
+    let str2: String = String::from("Code");
     println!("My name is {} and I like to {}.", str, str2);
+    
+    let char1: Option<char> = str.chars().nth(0);
+    
+    // Check safety by rust
+    // It will only print if the character exists or the error will show
+    match char1 {
+        Some(c) => println!("{}", c),
+        None => println!("No character at index 1000"),
+    }
+    // // This is invalid
+    // println!("char1: {}", char1);
 
 }
