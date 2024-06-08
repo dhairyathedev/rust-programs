@@ -32,6 +32,7 @@ fn main() {
     // Strings
 
     let str = "Dhairya Shah";
-    println!("My name is {}", str);
+    let str2 = String::from("Code");
+    println!("My name is {} and I like to {}.", str, str2);
 
 }
